@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cyb.xandroid.demo">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 访问权限-->
+    <uses-permission android:name="cyb.xandroid.server.BIND_AIDL_SERVER" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--  -->
+        <!-- Activity star -->
+        <activity
+            android:name=".acitity.IntenFilterActivity"
+            android:label="Activity/Inten-Filter"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="cyb.xandroid.demo.Sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".acitity.TestIntenFilterActivity"
+            android:label="TestIntenFilterActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="cyb.xandroid.demo.Action_TestIntenFilter" />
+                <action android:name="cyb.xandroid.demo.Action_TestIntenFilter2" />
+
+                <!-- 隐身启动必须有 -->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="cyb.xandroid.demo.Category_TestIntenFilter" />
+                <category android:name="cyb.xandroid.demo.Category_TestIntenFilter2" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <!-- 隐身启动必须有 -->
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="test/IntenFilter" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="cyb.xandroid.demo.Action_TestIntenFilter" />
+                <!-- 隐身启动必须有 -->
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="www.baidu.com"
+                    android:scheme="http" />
+            </intent-filter>
+            <intent-filter>
+
+                <!-- 隐身启动必须有 -->
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="www.sina.com.cn"
+                    android:mimeType="test/IntenFilter2"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+
+        <!-- activity end -->
+        <!--  -->
+        <!--  -->
+        <!-- TabLayout star -->
+        <activity
+            android:name=".view.xtablayout.XTableLayoutAcitivty"
+            android:label="TabLayout/TabLayout">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="cyb.xandroid.demo.Sample" />
+            </intent-filter>
+        </activity>
+        <!-- TabLayout end -->
+        <!--  -->
+        <!--  -->
+        <!-- StatusBar start -->
+        <activity
+            android:name=".statusbar.StatusBarActivity"
+            android:label="StatusBar/StatusBarAcitity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="cyb.xandroid.demo.Sample" />
+            </intent-filter>
+        </activity>
+        <!-- StatusBar end -->
+        <!--  -->
+        <!--  -->
+        <!-- XViewPager start -->
+        <activity
+            android:name=".view.xviewpager.LoopViewPagerActivity"
+            android:label="xViewPager/LoopViewPager"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="cyb.xandroid.demo.Sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.xviewpager.XZoomViewPagerActivity"
+            android:label="xViewPager/XZoomViewPager"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="cyb.xandroid.demo.Sample" />
+            </intent-filter>
+        </activity>
+        <!-- XViewPager end -->
+        <!--  -->
+        <!--  -->
+        <!-- XImage end -->
+        <activity
+            android:name=".view.xiamgeview.XTransImageViewActivity"
+            android:label="xImageView/XTransImage"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="cyb.xandroid.demo.Sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.xalbum.XAlbumActivity"
+            android:label="xAlbum/XAlbum"
+            android:theme="@style/Theme.AppCompat.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="cyb.xandroid.demo.Sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.xiamgeview.XBlurringViewActivity"
+            android:label="xImageView/XBlurringView"
+            android:theme="@style/Theme.AppCompat.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="cyb.xandroid.demo.Sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.xiamgeview.XClipSquareImageViewActivity"
+            android:label="xImageView/XClipSquareImageView"
+            android:theme="@style/Theme.AppCompat.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="cyb.xandroid.demo.Sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.xiamgeview.XPhotoPreviewActivity"
+            android:label="xImageView/XPhotoPreview"
+            android:theme="@style/Theme.AppCompat.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="cyb.xandroid.demo.Sample" />
+            </intent-filter>
+        </activity>
+
+        <!-- XImage end -->
+        <!--  -->
+        <!--  -->
+        <activity
+            android:name=".service.AidlServiceActivity"
+            android:label="xService/AidlService"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="cyb.xandroid.demo.Sample" />
+            </intent-filter>
+        </activity>
+        <!--  -->
+        <!--  -->
+    </application>
+
+</manifest>

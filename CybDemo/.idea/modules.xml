@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CybDemo.iml" filepath="$PROJECT_DIR$/CybDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aidl/aidl.iml" filepath="$PROJECT_DIR$/aidl/aidl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/server.iml" filepath="$PROJECT_DIR$/server/server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xAlbum/xAlbum.iml" filepath="$PROJECT_DIR$/xAlbum/xAlbum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xImage/xImage.iml" filepath="$PROJECT_DIR$/xImage/xImage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xUtils/xUtils.iml" filepath="$PROJECT_DIR$/xUtils/xUtils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xViewPager/xViewPager.iml" filepath="$PROJECT_DIR$/xViewPager/xViewPager.iml" />
+    </modules>
+  </component>
+</project>

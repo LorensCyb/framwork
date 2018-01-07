@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Black">
+        <!--<item name="android:windowContentTransitions">true</item>-->
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme.Drag">
+        <item name="android:windowNoTitle">true</item> <!-- 设置无标题 -->
+        <item name="android:windowFullscreen">?android:windowNoTitle</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!--开启专场动画-->
+</resources>

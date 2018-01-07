@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">XAndroid</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_loop_view">LoopViewActivity</string>
+    <string name="title_activity_status_bar">StatusBarActivity</string>
+    <string name="title_activity_inten_filter">IntenFilterActivity</string>
+    <string name="title_activity_xzoom_view_pager">XZoomViewPagerActivity</string>
+    <string name="title_activity_xtrans_image_view">XTransImageViewActivity</string>
+
+
+    <!--xAlbum start-->
+    <string name="select_picture">Select picture</string>
+    <string name="max_select_num">Maximum number of options</string>
+    <string name="select_mode">Selection mode</string>
+    <string name="single">Single</string>
+    <string name="multiple">Multiple</string>
+    <string name="show_camera">Show Camera</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="enable_preview">Enable Preview</string>
+    <string name="enable_crop">Enable Crop Image</string>
+    <string name="enable">Enable</string>
+    <string name="disable">Disable</string>
+    <string name="title_activity_aidl_service">AidlServiceActivity</string>
+    <!--xAlbum end-->
+</resources>
