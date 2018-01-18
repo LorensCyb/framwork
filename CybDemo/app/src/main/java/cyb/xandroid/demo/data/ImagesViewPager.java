@@ -1,4 +1,4 @@
-package cyb.xandroid.demo.Data;
+package cyb.xandroid.demo.data;
 
 import android.content.Context;
 import android.view.View;

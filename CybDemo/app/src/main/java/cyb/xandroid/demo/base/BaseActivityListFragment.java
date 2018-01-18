@@ -1,4 +1,4 @@
-package cyb.xandroid.demo.Base;
+package cyb.xandroid.demo.base;
 
 import android.content.Intent;
 import android.os.Bundle;

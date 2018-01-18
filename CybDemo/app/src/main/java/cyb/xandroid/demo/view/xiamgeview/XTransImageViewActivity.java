@@ -8,7 +8,7 @@ import android.support.v7.widget.Toolbar;
 import java.util.ArrayList;
 import java.util.List;
 
-import cyb.xandroid.demo.Data.ImageDatas;
+import cyb.xandroid.demo.data.ImageDatas;
 import cyb.xandroid.demo.R;
 import cyb.xandroid.view.ximage.transimageview.XBigImagePreview;
 

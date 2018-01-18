@@ -1,4 +1,4 @@
-package cyb.xandroid.demo.Base;
+package cyb.xandroid.demo.base;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

@@ -2,7 +2,7 @@ package cyb.xandroid.demo.view.xviewpager;
 
 import android.support.v4.app.Fragment;
 
-import cyb.xandroid.demo.Base.BaseActivityListFragment;
+import cyb.xandroid.demo.base.BaseActivityListFragment;
 
 /**
  * A simple {@link Fragment} subclass.

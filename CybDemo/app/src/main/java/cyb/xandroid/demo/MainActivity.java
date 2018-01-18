@@ -1,6 +1,5 @@
 package cyb.xandroid.demo;
 
-import android.app.Service;
 import android.os.Build;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -9,8 +8,8 @@ import android.os.Bundle;
 import java.util.ArrayList;
 import java.util.List;
 
-import cyb.xandroid.demo.Base.BaseAppCompatActivity;
-import cyb.xandroid.demo.Base.BaseFragmentPagerAdapter;
+import cyb.xandroid.demo.base.BaseAppCompatActivity;
+import cyb.xandroid.demo.base.BaseFragmentPagerAdapter;
 import cyb.xandroid.demo.acitity.ActivityFragment;
 import cyb.xandroid.demo.service.ServiceFragment;
 import cyb.xandroid.demo.statusbar.StatusBarFragment;

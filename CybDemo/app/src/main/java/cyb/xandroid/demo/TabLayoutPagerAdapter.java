@@ -2,7 +2,7 @@ package cyb.xandroid.demo;
 
 import android.support.v4.app.FragmentManager;
 
-import cyb.xandroid.demo.Base.BaseFragmentPagerAdapter;
+import cyb.xandroid.demo.base.BaseFragmentPagerAdapter;
 
 /**
  * Created by chenyangbo on 2017/6/22.

@@ -6,12 +6,11 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Toast;
 
-import cyb.xandroid.demo.Base.BaseAppCompatActivity;
+import cyb.xandroid.demo.base.BaseAppCompatActivity;
 import cyb.xandroid.demo.R;
 
 public class IntenFilterActivity extends BaseAppCompatActivity implements View.OnClickListener {

@@ -2,8 +2,6 @@ package cyb.xandroid.demo.view.xviewpager;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
@@ -20,7 +18,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import cyb.xandroid.demo.Data.ImageDatas;
+import cyb.xandroid.demo.data.ImageDatas;
 import cyb.xandroid.demo.R;
 import cyb.xandroid.view.xviewpager.XZoomPagerAdapter;
 import cyb.xandroid.view.xviewpager.XZoomViewPager;

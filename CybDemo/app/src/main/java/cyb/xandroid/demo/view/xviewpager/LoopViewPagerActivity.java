@@ -4,9 +4,9 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 
-import cyb.xandroid.demo.Base.BaseAppCompatActivity;
-import cyb.xandroid.demo.Data.ImageDatas;
-import cyb.xandroid.demo.Data.ImagesViewPager;
+import cyb.xandroid.demo.base.BaseAppCompatActivity;
+import cyb.xandroid.demo.data.ImageDatas;
+import cyb.xandroid.demo.data.ImagesViewPager;
 import cyb.xandroid.demo.R;
 import cyb.xandroid.view.xviewpager.AutoLoopViewPager;
 import cyb.xandroid.view.xviewpager.indicator.AnimatorCircleIndicator;

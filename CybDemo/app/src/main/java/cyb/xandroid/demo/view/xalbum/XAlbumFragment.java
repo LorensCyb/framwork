@@ -2,7 +2,7 @@ package cyb.xandroid.demo.view.xalbum;
 
 import android.support.v4.app.Fragment;
 
-import cyb.xandroid.demo.Base.BaseActivityListFragment;
+import cyb.xandroid.demo.base.BaseActivityListFragment;
 
 /**
  * A simple {@link Fragment} subclass.

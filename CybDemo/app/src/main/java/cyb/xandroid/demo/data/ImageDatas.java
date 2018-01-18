@@ -1,4 +1,4 @@
-package cyb.xandroid.demo.Data;
+package cyb.xandroid.demo.data;
 
 import java.util.ArrayList;
 import java.util.List;

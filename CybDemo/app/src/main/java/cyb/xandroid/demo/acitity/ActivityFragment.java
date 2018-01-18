@@ -2,7 +2,7 @@ package cyb.xandroid.demo.acitity;
 
 import android.os.Bundle;
 
-import cyb.xandroid.demo.Base.BaseActivityListFragment;
+import cyb.xandroid.demo.base.BaseActivityListFragment;
 
 /**
  * Created by chenyangbo on 2017/6/26.
