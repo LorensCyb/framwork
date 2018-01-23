@@ -36,51 +36,51 @@
                 <category android:name="cyb.xandroid.demo.Sample" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".acitity.TestIntenFilterActivity"
-            android:label="TestIntenFilterActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="cyb.xandroid.demo.Action_TestIntenFilter" />
-                <action android:name="cyb.xandroid.demo.Action_TestIntenFilter2" />
+        <!--<activity-->
+        <!--android:name=".acitity.Te"-->
+        <!--android:label="TestIntenFilterActivity"-->
+        <!--android:theme="@style/AppTheme.NoActionBar">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="cyb.xandroid.demo.Action_TestIntenFilter" />-->
+        <!--<action android:name="cyb.xandroid.demo.Action_TestIntenFilter2" />-->
 
-                <!-- 隐身启动必须有 -->
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
+        <!--&lt;!&ndash; 隐身启动必须有 &ndash;&gt;-->
+        <!--<category android:name="android.intent.category.DEFAULT" />-->
+        <!--</intent-filter>-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.VIEW" />-->
 
-                <category android:name="cyb.xandroid.demo.Category_TestIntenFilter" />
-                <category android:name="cyb.xandroid.demo.Category_TestIntenFilter2" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <!-- 隐身启动必须有 -->
-                <category android:name="android.intent.category.DEFAULT" />
+        <!--<category android:name="cyb.xandroid.demo.Category_TestIntenFilter" />-->
+        <!--<category android:name="cyb.xandroid.demo.Category_TestIntenFilter2" />-->
+        <!--<category android:name="android.intent.category.DEFAULT" />-->
+        <!--</intent-filter>-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.VIEW" />-->
+        <!--&lt;!&ndash; 隐身启动必须有 &ndash;&gt;-->
+        <!--<category android:name="android.intent.category.DEFAULT" />-->
 
-                <data android:mimeType="test/IntenFilter" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="cyb.xandroid.demo.Action_TestIntenFilter" />
-                <!-- 隐身启动必须有 -->
-                <category android:name="android.intent.category.DEFAULT" />
+        <!--<data android:mimeType="test/IntenFilter" />-->
+        <!--</intent-filter>-->
+        <!--<intent-filter>-->
+        <!--<action android:name="cyb.xandroid.demo.Action_TestIntenFilter" />-->
+        <!--&lt;!&ndash; 隐身启动必须有 &ndash;&gt;-->
+        <!--<category android:name="android.intent.category.DEFAULT" />-->
 
-                <data
-                    android:host="www.baidu.com"
-                    android:scheme="http" />
-            </intent-filter>
-            <intent-filter>
+        <!--<data-->
+        <!--android:host="www.baidu.com"-->
+        <!--android:scheme="http" />-->
+        <!--</intent-filter>-->
+        <!--<intent-filter>-->
 
-                <!-- 隐身启动必须有 -->
-                <category android:name="android.intent.category.DEFAULT" />
+        <!--&lt;!&ndash; 隐身启动必须有 &ndash;&gt;-->
+        <!--<category android:name="android.intent.category.DEFAULT" />-->
 
-                <data
-                    android:host="www.sina.com.cn"
-                    android:mimeType="test/IntenFilter2"
-                    android:scheme="http" />
-            </intent-filter>
-        </activity>
+        <!--<data-->
+        <!--android:host="www.sina.com.cn"-->
+        <!--android:mimeType="test/IntenFilter2"-->
+        <!--android:scheme="http" />-->
+        <!--</intent-filter>-->
+        <!--</activity>-->
 
         <!-- activity end -->
         <!--  -->

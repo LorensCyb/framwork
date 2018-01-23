@@ -34,7 +34,7 @@ public class LocalMediaLoader {
             MediaStore.Images.Media.DISPLAY_NAME,
             MediaStore.Images.Media.DATE_ADDED,
             MediaStore.Images.Media.SIZE
-            };
+    };
 
     private final static String[] VIDEO_PROJECTION = {
             MediaStore.Video.Media._ID,
@@ -171,9 +171,11 @@ public class LocalMediaLoader {
                             allImageFolder.setImageNum(allImageFolder.getImageNum() + 1);
                         } while (data.moveToNext());
 
-                        allImageFolder.setFirstImagePath(allImages.get(0).getPath());
-                        allImageFolder.setName(activity.getString(R.string.all_image));
-                        allImageFolder.setImages(allImages);
+                        if (!allImages.isEmpty()) {
+                            allImageFolder.setFirstImagePath(allImages.get(0).getPath());
+                            allImageFolder.setName(activity.getString(R.string.all_image));
+                            allImageFolder.setImages(allImages);
+                        }
 
                         imageFolders.add(allImageFolder);
                         sortFolder(imageFolders);

@@ -1,1 +1,1 @@
-include ':app', ':xImage', ':xViewPager', ':xUtils', ':xAlbum', ':server', ':aidl'//, ':xAlbum'
+include ':app', ':xImage', ':xViewPager', ':xUtils', ':xAlbum', ':server', ':aidl', ':FaceDetect', ':xPhotoViewAttacher', ':xSwipeItemlayout'//, ':xAlbum'

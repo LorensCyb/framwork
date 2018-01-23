@@ -19,8 +19,6 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.view.MotionEvent;
 
-import cyb.xandroid.view.ximage.photoview.Compat;
-
 
 @TargetApi(5)
 public class EclairGestureDetector extends CupcakeGestureDetector {

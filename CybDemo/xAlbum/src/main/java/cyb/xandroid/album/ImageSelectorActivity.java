@@ -1,22 +1,21 @@
 package cyb.xandroid.album;
 
-import android.Manifest;
 import android.app.Activity;
-import android.content.ContentValues;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
-import android.provider.MediaStore;
-import android.support.v4.content.ContextCompat;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import cyb.xandroid.album.adapter.ImageFolderAdapter;
 import cyb.xandroid.album.adapter.ImageListAdapter;
@@ -31,8 +30,6 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import static java.security.AccessController.getContext;
-
 /**
  * Created by dee on 15/11/19.
  */
@@ -40,14 +37,18 @@ public class ImageSelectorActivity extends AppCompatActivity {
     public final static int REQUEST_IMAGE = 66;
     public final static int REQUEST_CAMERA = 67;
 
-    private final static String SELECTED_PARAM = "SelectParam";
-    private int spanCount = 3;
+
+    private static final String TAG = "xAlum";
+    private static final int READ_EXTERNAL_STORAGE_CODE = 1;
+    private static final String READ_EXTERNAL_STORAGE = "android.permission.READ_EXTERNAL_STORAGE";
+    private static final String SELECTED_PARAM = "SelectParam";
+
 
     private Toolbar toolbar;
     private TextView doneText;
-
     private TextView previewText;
 
+    private int spanCount = 3;
     private RecyclerView recyclerView;
     private ImageListAdapter imageAdapter;
 
@@ -56,7 +57,6 @@ public class ImageSelectorActivity extends AppCompatActivity {
     private FolderWindow folderWindow;
 
     private String cameraPath;
-
     private SelectParam mSelectParam;
 
     public static void start(Activity activity, SelectParam selectParam) {
@@ -82,14 +82,7 @@ public class ImageSelectorActivity extends AppCompatActivity {
         }
         initView();
         registerListener();
-        new LocalMediaLoader(this, LocalMediaLoader.TYPE_IMAGE).loadAllImage(new LocalMediaLoader.LocalMediaLoadListener() {
-
-            @Override
-            public void loadComplete(List<LocalMediaFolder> folders) {
-                folderWindow.bindFolder(folders);
-                imageAdapter.bindImages(folders.get(0).getImages());
-            }
-        });
+        requestPermission();
     }
 
     public void initView() {
@@ -191,6 +184,46 @@ public class ImageSelectorActivity extends AppCompatActivity {
         });
     }
 
+    private void loadImages() {
+        new LocalMediaLoader(this, LocalMediaLoader.TYPE_IMAGE).loadAllImage(new LocalMediaLoader.LocalMediaLoadListener() {
+
+            @Override
+            public void loadComplete(List<LocalMediaFolder> folders) {
+                folderWindow.bindFolder(folders);
+                imageAdapter.bindImages(folders.get(0).getImages());
+            }
+        });
+    }
+
+    private void requestPermission() {
+        //如果是6.0以下的手机，ActivityCompat.checkSelfPermission()会始终等于PERMISSION_GRANTED，
+        // 但是，如果用户关闭了你申请的权限(如下图，在安装的时候，将一些权限关闭了)，ActivityCompat.checkSelfPermission()则可能会导致程序崩溃(java.lang.RuntimeException: Unknown exception code: 1 msg null)，
+        // 你可以使用try{}catch(){},处理异常，也可以判断系统版本，低于23就不申请权限，直接做你想做的。permissionGrant.onPermissionGranted(requestCode);
+        try {
+            if (Build.VERSION.SDK_INT < 23) {
+                if (ActivityCompat.checkSelfPermission(this, READ_EXTERNAL_STORAGE)
+                        != PackageManager.PERMISSION_GRANTED) {
+                    ActivityCompat.requestPermissions(this, new String[]{READ_EXTERNAL_STORAGE},
+                            READ_EXTERNAL_STORAGE_CODE);
+                }
+                return;
+            }
+            loadImages();
+        } catch (RuntimeException e) {
+            return;
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == READ_EXTERNAL_STORAGE_CODE) {
+            if (grantResults != null && grantResults.length > 0
+                    && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                loadImages();
+            }
+        }
+    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

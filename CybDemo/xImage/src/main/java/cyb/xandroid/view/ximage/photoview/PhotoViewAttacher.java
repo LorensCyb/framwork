@@ -21,7 +21,6 @@ import android.graphics.Matrix;
 import android.graphics.Matrix.ScaleToFit;
 import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
-import android.util.FloatMath;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
@@ -36,6 +35,7 @@ import android.widget.ImageView.ScaleType;
 
 import java.lang.ref.WeakReference;
 
+import cyb.xandroid.view.ximage.photoview.gestures.Compat;
 import cyb.xandroid.view.ximage.photoview.gestures.OnGestureListener;
 import cyb.xandroid.view.ximage.photoview.gestures.VersionedGestureDetector;
 import cyb.xandroid.view.ximage.photoview.log.LogManager;
