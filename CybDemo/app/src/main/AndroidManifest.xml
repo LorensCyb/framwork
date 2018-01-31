@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
-    <!-- 访问权限-->
+    <!-- 访问权限 -->
     <uses-permission android:name="cyb.xandroid.server.BIND_AIDL_SERVER" />
 
     <application
@@ -36,51 +36,58 @@
                 <category android:name="cyb.xandroid.demo.Sample" />
             </intent-filter>
         </activity>
-        <!--<activity-->
-        <!--android:name=".acitity.Te"-->
-        <!--android:label="TestIntenFilterActivity"-->
-        <!--android:theme="@style/AppTheme.NoActionBar">-->
-        <!--<intent-filter>-->
-        <!--<action android:name="cyb.xandroid.demo.Action_TestIntenFilter" />-->
-        <!--<action android:name="cyb.xandroid.demo.Action_TestIntenFilter2" />-->
+        <!-- <activity -->
+        <!-- android:name=".acitity.Te" -->
+        <!-- android:label="TestIntenFilterActivity" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="cyb.xandroid.demo.Action_TestIntenFilter" /> -->
+        <!-- <action android:name="cyb.xandroid.demo.Action_TestIntenFilter2" /> -->
 
-        <!--&lt;!&ndash; 隐身启动必须有 &ndash;&gt;-->
-        <!--<category android:name="android.intent.category.DEFAULT" />-->
-        <!--</intent-filter>-->
-        <!--<intent-filter>-->
-        <!--<action android:name="android.intent.action.VIEW" />-->
 
-        <!--<category android:name="cyb.xandroid.demo.Category_TestIntenFilter" />-->
-        <!--<category android:name="cyb.xandroid.demo.Category_TestIntenFilter2" />-->
-        <!--<category android:name="android.intent.category.DEFAULT" />-->
-        <!--</intent-filter>-->
-        <!--<intent-filter>-->
-        <!--<action android:name="android.intent.action.VIEW" />-->
-        <!--&lt;!&ndash; 隐身启动必须有 &ndash;&gt;-->
-        <!--<category android:name="android.intent.category.DEFAULT" />-->
+        <!-- &lt;!&ndash; 隐身启动必须有 &ndash;&gt; -->
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- </intent-filter> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.VIEW" /> -->
 
-        <!--<data android:mimeType="test/IntenFilter" />-->
-        <!--</intent-filter>-->
-        <!--<intent-filter>-->
-        <!--<action android:name="cyb.xandroid.demo.Action_TestIntenFilter" />-->
-        <!--&lt;!&ndash; 隐身启动必须有 &ndash;&gt;-->
-        <!--<category android:name="android.intent.category.DEFAULT" />-->
 
-        <!--<data-->
-        <!--android:host="www.baidu.com"-->
-        <!--android:scheme="http" />-->
-        <!--</intent-filter>-->
-        <!--<intent-filter>-->
+        <!-- <category android:name="cyb.xandroid.demo.Category_TestIntenFilter" /> -->
+        <!-- <category android:name="cyb.xandroid.demo.Category_TestIntenFilter2" /> -->
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- </intent-filter> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.VIEW" /> -->
+        <!-- &lt;!&ndash; 隐身启动必须有 &ndash;&gt; -->
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
 
-        <!--&lt;!&ndash; 隐身启动必须有 &ndash;&gt;-->
-        <!--<category android:name="android.intent.category.DEFAULT" />-->
 
-        <!--<data-->
-        <!--android:host="www.sina.com.cn"-->
-        <!--android:mimeType="test/IntenFilter2"-->
-        <!--android:scheme="http" />-->
-        <!--</intent-filter>-->
-        <!--</activity>-->
+        <!-- <data android:mimeType="test/IntenFilter" /> -->
+        <!-- </intent-filter> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="cyb.xandroid.demo.Action_TestIntenFilter" /> -->
+        <!-- &lt;!&ndash; 隐身启动必须有 &ndash;&gt; -->
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+
+
+        <!-- <data -->
+        <!-- android:host="www.baidu.com" -->
+        <!-- android:scheme="http" /> -->
+        <!-- </intent-filter> -->
+        <!-- <intent-filter> -->
+
+
+        <!-- &lt;!&ndash; 隐身启动必须有 &ndash;&gt; -->
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+
+
+        <!-- <data -->
+        <!-- android:host="www.sina.com.cn" -->
+        <!-- android:mimeType="test/IntenFilter2" -->
+        <!-- android:scheme="http" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+
 
         <!-- activity end -->
         <!--  -->
@@ -136,7 +143,7 @@
         <!-- XViewPager end -->
         <!--  -->
         <!--  -->
-        <!-- XImage end -->
+        <!-- XImage start -->
         <activity
             android:name=".view.xiamgeview.XTransImageViewActivity"
             android:label="xImageView/XTransImage"
@@ -187,7 +194,6 @@
                 <category android:name="cyb.xandroid.demo.Sample" />
             </intent-filter>
         </activity>
-
         <!-- XImage end -->
         <!--  -->
         <!--  -->
@@ -201,8 +207,20 @@
                 <category android:name="cyb.xandroid.demo.Sample" />
             </intent-filter>
         </activity>
+        <!-- end -->
         <!--  -->
         <!--  -->
+        <!-- xRecyclerView start -->
+        <activity
+            android:name=".view.xrecyclerview.XRecyclerViewActivity"
+            android:label="xRecyclerView/XRecyclerView"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="cyb.xandroid.demo.Sample" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

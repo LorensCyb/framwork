@@ -14,6 +14,7 @@ import cyb.xandroid.demo.acitity.ActivityFragment;
 import cyb.xandroid.demo.service.ServiceFragment;
 import cyb.xandroid.demo.statusbar.StatusBarFragment;
 import cyb.xandroid.demo.view.xiamgeview.XImageViewFragment;
+import cyb.xandroid.demo.view.xrecyclerview.XRecyclerViewFragment;
 import cyb.xandroid.demo.view.xtablayout.TabLayoutFragment;
 import cyb.xandroid.demo.view.xviewpager.XViewPagerFragment;
 
@@ -59,11 +60,11 @@ public class MainActivity extends BaseAppCompatActivity {
         mViewPagerList.add(new IViewPager("Service", ServiceFragment.newInstance("xService", false)));
         mViewPagerList.add(new IViewPager("StatusBar", StatusBarFragment.newInstance()));
         mViewPagerList.add(new IViewPager("TabLayout", TabLayoutFragment.newInstance()));
-        mViewPagerList.add(new IViewPager("XRecyclerView", TabLayoutFragment.newInstance()));
-        mViewPagerList.add(new IViewPager("XImageView", XImageViewFragment.newInstance("xImageView", false)));
-        mViewPagerList.add(new IViewPager("XAlbum", XImageViewFragment.newInstance("xAlbum", false)));
+        mViewPagerList.add(new IViewPager("xRecyclerView", XRecyclerViewFragment.newInstance("xRecyclerView", false)));
+        mViewPagerList.add(new IViewPager("xImageView", XImageViewFragment.newInstance("xImageView", false)));
+        mViewPagerList.add(new IViewPager("xAlbum", XImageViewFragment.newInstance("xAlbum", false)));
         mViewPagerList.add(new IViewPager("xViewPager", XViewPagerFragment.newInstance("xViewPager", false)));
-        mViewPagerList.add(new IViewPager("TabLayout", TabLayoutFragment.newInstance()));
+        mViewPagerList.add(new IViewPager("xSwipeItemLayout", XViewPagerFragment.newInstance("xSwipeItemLayout", false)));
         mViewPagerList.add(new IViewPager("TabLayout", TabLayoutFragment.newInstance()));
         mViewPagerList.add(new IViewPager("TabLayout", TabLayoutFragment.newInstance()));
     }

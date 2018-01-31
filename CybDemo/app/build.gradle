@@ -28,10 +28,11 @@ dependencies {
     compile project(':xViewPager')
     compile project(':xUtils')
     compile project(':xAlbum')
+    compile project(':aidl')
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support:design:26.0.0-alpha1'
     compile 'com.android.support:support-v4:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
     testCompile 'junit:junit:4.12'
-    compile project(':aidl')
+    compile project(':xRecyclerView')
 }

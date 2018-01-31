@@ -1,4 +1,4 @@
-package cyb.xandroid.view.xswipeitemlayout;
+package cyb.xandroid.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -19,7 +19,6 @@ import android.widget.AdapterView;
 import android.widget.FrameLayout;
 
 import cyb.xandroid.view.xswipeitemlayout.R;
-
 
 import java.lang.reflect.Method;
 
