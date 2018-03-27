@@ -1,0 +1,220 @@
+[
+    {
+        "outputFile": "E:\\CybDemo\\framwork\\CybDemo\\xRecyclerView\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 1693,
+                    "endColumn": 48,
+                    "endOffset": 1737
+                },
+                "from": {
+                    "file": "E:\\CybDemo\\framwork\\CybDemo\\xRecyclerView\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 1693,
+                        "endColumn": 48,
+                        "endOffset": 1737
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 1742,
+                    "endColumn": 50,
+                    "endOffset": 1788
+                },
+                "from": {
+                    "file": "E:\\CybDemo\\framwork\\CybDemo\\xRecyclerView\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 4,
+                        "startOffset": 1742,
+                        "endColumn": 50,
+                        "endOffset": 1788
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 1793,
+                    "endColumn": 60,
+                    "endOffset": 1849
+                },
+                "from": {
+                    "file": "E:\\CybDemo\\framwork\\CybDemo\\xRecyclerView\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 1793,
+                        "endColumn": 60,
+                        "endOffset": 1849
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 1854,
+                    "endColumn": 61,
+                    "endOffset": 1911
+                },
+                "from": {
+                    "file": "E:\\CybDemo\\framwork\\CybDemo\\xRecyclerView\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 4,
+                        "startOffset": 1854,
+                        "endColumn": 61,
+                        "endOffset": 1911
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 1916,
+                    "endColumn": 66,
+                    "endOffset": 1978
+                },
+                "from": {
+                    "file": "E:\\CybDemo\\framwork\\CybDemo\\xRecyclerView\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 4,
+                        "startOffset": 1916,
+                        "endColumn": 66,
+                        "endOffset": 1978
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 1983,
+                    "endColumn": 52,
+                    "endOffset": 2031
+                },
+                "from": {
+                    "file": "E:\\CybDemo\\framwork\\CybDemo\\xRecyclerView\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 4,
+                        "startOffset": 1983,
+                        "endColumn": 52,
+                        "endOffset": 2031
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 2036,
+                    "endColumn": 45,
+                    "endOffset": 2077
+                },
+                "from": {
+                    "file": "E:\\CybDemo\\framwork\\CybDemo\\xRecyclerView\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 2036,
+                        "endColumn": 45,
+                        "endOffset": 2077
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 2082,
+                    "endColumn": 45,
+                    "endOffset": 2123
+                },
+                "from": {
+                    "file": "E:\\CybDemo\\framwork\\CybDemo\\xRecyclerView\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 4,
+                        "startOffset": 2082,
+                        "endColumn": 45,
+                        "endOffset": 2123
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 2128,
+                    "endColumn": 46,
+                    "endOffset": 2170
+                },
+                "from": {
+                    "file": "E:\\CybDemo\\framwork\\CybDemo\\xRecyclerView\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 40,
+                        "startColumn": 4,
+                        "startOffset": 2128,
+                        "endColumn": 46,
+                        "endOffset": 2170
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 2175,
+                    "endLine": 47,
+                    "endColumn": 12,
+                    "endOffset": 2461
+                },
+                "from": {
+                    "file": "E:\\CybDemo\\framwork\\CybDemo\\xRecyclerView\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 41,
+                        "startColumn": 4,
+                        "startOffset": 2175,
+                        "endLine": 47,
+                        "endColumn": 12,
+                        "endOffset": 2461
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 48,
+                    "startColumn": 4,
+                    "startOffset": 2466,
+                    "endLine": 50,
+                    "endColumn": 12,
+                    "endOffset": 2621
+                },
+                "from": {
+                    "file": "E:\\CybDemo\\framwork\\CybDemo\\xRecyclerView\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 48,
+                        "startColumn": 4,
+                        "startOffset": 2466,
+                        "endLine": 50,
+                        "endColumn": 12,
+                        "endOffset": 2621
+                    }
+                }
+            }
+        ]
+    }
+]

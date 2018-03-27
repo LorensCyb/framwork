@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\CybDemo\\framwork\\CybDemo\\xRecyclerView\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pull_to_refresh_head.xml",
+        "source": "E:\\CybDemo\\framwork\\CybDemo\\xRecyclerView\\build\\intermediates\\bundles\\debug\\res\\layout\\pull_to_refresh_head.xml"
+    },
+    {
+        "merged": "E:\\CybDemo\\framwork\\CybDemo\\xRecyclerView\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\listview_header.xml",
+        "source": "E:\\CybDemo\\framwork\\CybDemo\\xRecyclerView\\build\\intermediates\\bundles\\debug\\res\\layout\\listview_header.xml"
+    },
+    {
+        "merged": "E:\\CybDemo\\framwork\\CybDemo\\xRecyclerView\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\listview_footer.xml",
+        "source": "E:\\CybDemo\\framwork\\CybDemo\\xRecyclerView\\build\\intermediates\\bundles\\debug\\res\\layout\\listview_footer.xml"
+    }
+]

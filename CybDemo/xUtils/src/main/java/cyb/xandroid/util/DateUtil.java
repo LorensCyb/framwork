@@ -35,9 +35,9 @@ public class DateUtil {
     }
 
     /**
-     * 获取今天是星期几
+     * 获取周日到周六
      *
-     * @return  返回周日到周六，返回字符串格式与手机语言有关
+     * @return 返回周日到周六，返回字符串格式与手机语言有关
      */
     public static List<String> getWeeksFormatEEE() {
         SimpleDateFormat formatter = new SimpleDateFormat("EEE");

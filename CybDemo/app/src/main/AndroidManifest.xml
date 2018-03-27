@@ -221,6 +221,19 @@
                 <category android:name="cyb.xandroid.demo.Sample" />
             </intent-filter>
         </activity>
+        <!--  -->
+        <!--  -->
+        <!-- xScheduleView start -->
+        <activity
+            android:name=".view.xscheduleviw.XScheduleViewAcitivty"
+            android:label="xScheduleView/XScheduleView"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="cyb.xandroid.demo.Sample" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

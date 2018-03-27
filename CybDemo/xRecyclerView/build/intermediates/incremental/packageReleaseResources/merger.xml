@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main$Generated" generated="true"><source path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res"/><source path="E:\CybDemo\framwork\CybDemo\xRecyclerView\build\generated\res\rs\release"/><source path="E:\CybDemo\framwork\CybDemo\xRecyclerView\build\generated\res\resValues\release"/></dataSet><dataSet config="release$Generated" generated="true"><source path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\release\res"/></dataSet><dataSet config="main" generated-set="main$Generated"><source path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res"><file name="progressbar" path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res\drawable\progressbar.xml" qualifiers="" type="drawable"/><file name="progressloading" path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res\drawable\progressloading.xml" qualifiers="" type="drawable"/><file name="iconfont_downgrey" path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res\drawable-hdpi\iconfont_downgrey.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_launcher" path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res\drawable-hdpi\ic_launcher.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_loading_rotate" path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res\drawable-hdpi\ic_loading_rotate.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_pulltorefresh_arrow" path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res\drawable-hdpi\ic_pulltorefresh_arrow.png" qualifiers="hdpi-v4" type="drawable"/><file name="loading_01" path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res\drawable-hdpi\loading_01.png" qualifiers="hdpi-v4" type="drawable"/><file name="loading_02" path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res\drawable-hdpi\loading_02.png" qualifiers="hdpi-v4" type="drawable"/><file name="loading_03" path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res\drawable-hdpi\loading_03.png" qualifiers="hdpi-v4" type="drawable"/><file name="loading_04" path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res\drawable-hdpi\loading_04.png" qualifiers="hdpi-v4" type="drawable"/><file name="loading_05" path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res\drawable-hdpi\loading_05.png" qualifiers="hdpi-v4" type="drawable"/><file name="loading_06" path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res\drawable-hdpi\loading_06.png" qualifiers="hdpi-v4" type="drawable"/><file name="loading_07" path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res\drawable-hdpi\loading_07.png" qualifiers="hdpi-v4" type="drawable"/><file name="loading_08" path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res\drawable-hdpi\loading_08.png" qualifiers="hdpi-v4" type="drawable"/><file name="loading_09" path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res\drawable-hdpi\loading_09.png" qualifiers="hdpi-v4" type="drawable"/><file name="loading_10" path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res\drawable-hdpi\loading_10.png" qualifiers="hdpi-v4" type="drawable"/><file name="loading_11" path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res\drawable-hdpi\loading_11.png" qualifiers="hdpi-v4" type="drawable"/><file name="loading_12" path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res\drawable-hdpi\loading_12.png" qualifiers="hdpi-v4" type="drawable"/><file name="listview_footer" path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res\layout\listview_footer.xml" qualifiers="" type="layout"/><file name="listview_header" path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res\layout\listview_header.xml" qualifiers="" type="layout"/><file name="pull_to_refresh_head" path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res\layout\pull_to_refresh_head.xml" qualifiers="" type="layout"/><file path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res\values\attrs.xml" qualifiers=""><declare-styleable name="AVLoadingIndicatorView">
+        <attr name="indicator">
+            <flag name="BallPulse" value="0"/>
+            <flag name="BallGridPulse" value="1"/>
+            <flag name="BallClipRotate" value="2"/>
+            <flag name="BallClipRotatePulse" value="3"/>
+            <flag name="SquareSpin" value="4"/>
+            <flag name="BallClipRotateMultiple" value="5"/>
+            <flag name="BallPulseRise" value="6"/>
+            <flag name="BallRotate" value="7"/>
+            <flag name="CubeTransition" value="8"/>
+            <flag name="BallZigZag" value="9"/>
+            <flag name="BallZigZagDeflect" value="10"/>
+            <flag name="BallTrianglePath" value="11"/>
+            <flag name="BallScale" value="12"/>
+            <flag name="LineScale" value="13"/>
+            <flag name="LineScaleParty" value="14"/>
+            <flag name="BallScaleMultiple" value="15"/>
+            <flag name="BallPulseSync" value="16"/>
+            <flag name="BallBeat" value="17"/>
+            <flag name="LineScalePulseOut" value="18"/>
+            <flag name="LineScalePulseOutRapid" value="19"/>
+            <flag name="BallScaleRipple" value="20"/>
+            <flag name="BallScaleRippleMultiple" value="21"/>
+            <flag name="BallSpinFadeLoader" value="22"/>
+            <flag name="LineSpinFadeLoader" value="23"/>
+            <flag name="TriangleSkewSpin" value="24"/>
+            <flag name="Pacman" value="25"/>
+            <flag name="BallGridBeat" value="26"/>
+            <flag name="SemiCircleSpin" value="27"/>
+        </attr>
+        <attr format="color" name="indicator_color"/>
+    </declare-styleable></file><file path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res\values\dimens.xml" qualifiers=""><dimen name="textandiconmargin">10dp</dimen></file><file path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res\values\strings.xml" qualifiers=""><string name="listview_header_hint_release">松开刷新</string><string name="refresh_done">刷新完成</string><string name="nomore_loading">""</string><string name="listview_loading">正在加载...</string><string name="app_name">XRecyclerView</string><string name="listview_header_hint_normal">下拉刷新</string><string name="listview_header_last_time">last update：</string><string name="refreshing">正在刷新...</string></file><file path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="AppBaseTheme">
+        
+    </style><style name="AppBaseTheme" parent="android:Theme.Light">
+        
+    </style></file><file path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res\values-v11\styles.xml" qualifiers="v11"><style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        
+    </style></file><file path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\main\res\values-v14\styles.xml" qualifiers="v14"><style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        
+    </style></file></source><source path="E:\CybDemo\framwork\CybDemo\xRecyclerView\build\generated\res\rs\release"/><source path="E:\CybDemo\framwork\CybDemo\xRecyclerView\build\generated\res\resValues\release"/></dataSet><dataSet config="release" generated-set="release$Generated"><source path="E:\CybDemo\framwork\CybDemo\xRecyclerView\src\release\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AVLoadingIndicatorView"><attr name="indicator">
+            <flag name="BallPulse" value="0"/>
+            <flag name="BallGridPulse" value="1"/>
+            <flag name="BallClipRotate" value="2"/>
+            <flag name="BallClipRotatePulse" value="3"/>
+            <flag name="SquareSpin" value="4"/>
+            <flag name="BallClipRotateMultiple" value="5"/>
+            <flag name="BallPulseRise" value="6"/>
+            <flag name="BallRotate" value="7"/>
+            <flag name="CubeTransition" value="8"/>
+            <flag name="BallZigZag" value="9"/>
+            <flag name="BallZigZagDeflect" value="10"/>
+            <flag name="BallTrianglePath" value="11"/>
+            <flag name="BallScale" value="12"/>
+            <flag name="LineScale" value="13"/>
+            <flag name="LineScaleParty" value="14"/>
+            <flag name="BallScaleMultiple" value="15"/>
+            <flag name="BallPulseSync" value="16"/>
+            <flag name="BallBeat" value="17"/>
+            <flag name="LineScalePulseOut" value="18"/>
+            <flag name="LineScalePulseOutRapid" value="19"/>
+            <flag name="BallScaleRipple" value="20"/>
+            <flag name="BallScaleRippleMultiple" value="21"/>
+            <flag name="BallSpinFadeLoader" value="22"/>
+            <flag name="LineSpinFadeLoader" value="23"/>
+            <flag name="TriangleSkewSpin" value="24"/>
+            <flag name="Pacman" value="25"/>
+            <flag name="BallGridBeat" value="26"/>
+            <flag name="SemiCircleSpin" value="27"/>
+        </attr><attr format="color" name="indicator_color"/></declare-styleable></configuration></mergedItems></merger>

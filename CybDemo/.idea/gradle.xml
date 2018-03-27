@@ -3,17 +3,22 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="LOCAL" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="D:\Android\android-studio\gradle\gradle-2.14.1" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/FaceDetect" />
             <option value="$PROJECT_DIR$/aidl" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/server" />
             <option value="$PROJECT_DIR$/xAlbum" />
             <option value="$PROJECT_DIR$/xImage" />
+            <option value="$PROJECT_DIR$/xPhotoViewAttacher" />
+            <option value="$PROJECT_DIR$/xRecyclerView" />
+            <option value="$PROJECT_DIR$/xSQLite" />
+            <option value="$PROJECT_DIR$/xScheduleView" />
+            <option value="$PROJECT_DIR$/xSwipeItemlayout" />
             <option value="$PROJECT_DIR$/xUtils" />
             <option value="$PROJECT_DIR$/xViewPager" />
           </set>

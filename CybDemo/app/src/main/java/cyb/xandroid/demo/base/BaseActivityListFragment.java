@@ -31,6 +31,13 @@ public class BaseActivityListFragment extends ListFragment {
     }
 
 
+    /**
+     * 创建一个Fragemnt
+     *
+     * @param label Fragement 的标题
+     * @param force
+     *
+     * */
     public static BaseActivityListFragment newInstance(String label, boolean force) {
         BaseActivityListFragment fragment = new BaseActivityListFragment();
         Bundle args = new Bundle();
@@ -79,6 +86,5 @@ public class BaseActivityListFragment extends ListFragment {
         Intent intent = (Intent) map.get("intent");
         startActivity(intent);
     }
-
 
 }

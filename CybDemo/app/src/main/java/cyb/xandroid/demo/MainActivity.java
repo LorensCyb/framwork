@@ -15,6 +15,7 @@ import cyb.xandroid.demo.service.ServiceFragment;
 import cyb.xandroid.demo.statusbar.StatusBarFragment;
 import cyb.xandroid.demo.view.xiamgeview.XImageViewFragment;
 import cyb.xandroid.demo.view.xrecyclerview.XRecyclerViewFragment;
+import cyb.xandroid.demo.view.xscheduleviw.XScheduleViewFragment;
 import cyb.xandroid.demo.view.xtablayout.TabLayoutFragment;
 import cyb.xandroid.demo.view.xviewpager.XViewPagerFragment;
 
@@ -65,7 +66,7 @@ public class MainActivity extends BaseAppCompatActivity {
         mViewPagerList.add(new IViewPager("xAlbum", XImageViewFragment.newInstance("xAlbum", false)));
         mViewPagerList.add(new IViewPager("xViewPager", XViewPagerFragment.newInstance("xViewPager", false)));
         mViewPagerList.add(new IViewPager("xSwipeItemLayout", XViewPagerFragment.newInstance("xSwipeItemLayout", false)));
-        mViewPagerList.add(new IViewPager("TabLayout", TabLayoutFragment.newInstance()));
+        mViewPagerList.add(new IViewPager("xScheduleView", XScheduleViewFragment.newInstance("xScheduleView", false)));
         mViewPagerList.add(new IViewPager("TabLayout", TabLayoutFragment.newInstance()));
     }
 

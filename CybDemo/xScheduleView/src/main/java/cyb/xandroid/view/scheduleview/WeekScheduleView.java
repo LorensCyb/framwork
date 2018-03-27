@@ -20,12 +20,12 @@ import cyb.xandroid.util.DateUtil;
 /**
  * Created by asus on 2018/3/12.
  */
-public class WeeKScheduleView extends View {
+public class WeekScheduleView extends View {
 
     public interface OnSchduleClickListener {
         void onScheduleClick(List<ScheduleView> schedules, int x, int y);
 
-        void onHourClick(ScheduleView schedule);
+        void onHourClick(ScheduleView schedules);
     }
 
     //
@@ -39,6 +39,7 @@ public class WeeKScheduleView extends View {
     private final int row = 12;
     private float space = 0;
     private boolean isMove = false;
+    private Gesture mGesture;
 
     //绘制网格
     private Paint mGridPaint;
@@ -69,22 +70,24 @@ public class WeeKScheduleView extends View {
 
     private List<ScheduleView> onTouchSchedules = null;
     private OnSchduleClickListener onClickListener;
-    private List<ScheduleView> scheduleList = new ArrayList<>();
+    private List<Schedule> timeInfoList = new ArrayList<>();
+    private List<ScheduleView> mScheduleViewList = new ArrayList<>();
 
-    public WeeKScheduleView(Context context) {
+    public WeekScheduleView(Context context) {
         this(context, null);
     }
 
-    public WeeKScheduleView(Context context, @Nullable AttributeSet attrs) {
+    public WeekScheduleView(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public WeeKScheduleView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public WeekScheduleView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init();
     }
 
     private void init() {
+        mGesture = new Gesture();
         //
         mHourTextPaint = new Paint();
         mHourTextPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -129,6 +132,7 @@ public class WeeKScheduleView extends View {
         //判断是否触碰到schedule
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
+                mGesture.onTouch(event);
                 onTouchSchedules = onScheduleTouch(event);
                 if (onTouchSchedules.size() == 0) {
                     calculationPosition(event.getX(), event.getY());
@@ -137,7 +141,7 @@ public class WeeKScheduleView extends View {
                 }
                 break;
             case MotionEvent.ACTION_MOVE:
-                isMove = true;
+                mGesture.onTouch(event);
                 onTouchSchedules = onScheduleTouch(event);
                 if (onTouchSchedules.size() == 0) {
                     calculationPosition(event.getX(), event.getY());
@@ -147,7 +151,7 @@ public class WeeKScheduleView extends View {
                 break;
             case MotionEvent.ACTION_UP:
                 onScheduleTouch(event);
-                if (!isMove) {
+                if (Gesture.ACTION_MOVE != mGesture.onTouch(event)) {
                     if (onTouchSchedules.size() == 0) {
                         onHourClick(event);
                     } else {
@@ -174,9 +178,9 @@ public class WeeKScheduleView extends View {
         drawWeekTxt(canvas);
         //绘制表格
         drawHours(canvas);
-        //
+        //绘制点击位置
         drawPressPosition(canvas);
-        //
+        //绘制schedule
         drawSchedule(canvas);
     }
 
@@ -218,7 +222,7 @@ public class WeeKScheduleView extends View {
         mWeekTextPaint.setTextSize(mWeekTextSize);
 
         //重新计算
-        for (ScheduleView schedule : scheduleList) {
+        for (ScheduleView schedule : mScheduleViewList) {
             schedule.init(marginLeft, marginTop, space);
         }
     }
@@ -323,7 +327,7 @@ public class WeeKScheduleView extends View {
      */
     private List<ScheduleView> onScheduleTouch(MotionEvent event) {
         List<ScheduleView> schedules = new ArrayList<>();
-        for (ScheduleView schedule : scheduleList) {
+        for (ScheduleView schedule : mScheduleViewList) {
             if (schedule.onTouchEvent(event)) {
                 schedules.add(schedule);
             }
@@ -336,7 +340,7 @@ public class WeeKScheduleView extends View {
      */
     private boolean onScheduleChange() {
         int count = 0;
-        for (ScheduleView schedule : scheduleList) {
+        for (ScheduleView schedule : mScheduleViewList) {
             if (schedule.hasChange()) {
                 count++;
             }
@@ -348,7 +352,7 @@ public class WeeKScheduleView extends View {
      * 绘制schedule
      */
     private void drawSchedule(Canvas canvas) {
-        for (ScheduleView schedule : scheduleList) {
+        for (ScheduleView schedule : mScheduleViewList) {
             schedule.draw(canvas);
         }
     }
@@ -373,13 +377,7 @@ public class WeeKScheduleView extends View {
     private void onHourClick(MotionEvent event) {
         if (event.getAction() == MotionEvent.ACTION_UP && onClickListener != null
                 && mEventPY >= 0 && mEventPX >= 0) {
-//            TimeInfo timeInfo = new TimeInfo();
-//            timeInfo.mRepeatType = TimeInfo.RepeatType.repeat;
-//            timeInfo.mStartTime = (int) mEventPY * 2 * 100;
-//            timeInfo.mOverTime = (int) (mEventPY + 1) * 2 * 100;
-//            timeInfo.mRepeat = (int) Math.pow(2, 7 - (int) mEventPX);
-//            Schedule schedule = new Schedule(marginLeft, marginTop, space);
-//            schedule.setTime(timeInfo);
+
 //            onClickListener.onHourClick(schedule);
         }
     }
@@ -388,17 +386,51 @@ public class WeeKScheduleView extends View {
         onClickListener = listener;
     }
 
-//    public void addSechedule(List<TimeInfo> timeInfoList) {
-//        if (timeInfoList == null) {
-//            return;
-//        }
-//        this.timeInfoList = timeInfoList;
-//        scheduleList.clear();
-//        for (TimeInfo timeInfo : timeInfoList) {
-//            Schedule schedule = new Schedule(marginLeft, marginTop, space);
-//            schedule.setTime(timeInfo);
-//            scheduleList.add(schedule);
-//        }
-//        invalidate();
-//    }
+
+    class Gesture {
+        public static final int ACTION_CLICK = -1;
+        public static final int ACTION_LONG_CLICK = -2;
+        public static final int ACTION_MOVE = 2;
+
+        private float mDownX;
+        private float mDownY;
+        private float moveX;
+        private float moveY;
+        private long currentMS;
+
+        public int onTouch(MotionEvent event) {
+            int action = ACTION_CLICK;
+            switch (event.getAction()) {
+                case MotionEvent.ACTION_DOWN:
+                    action = MotionEvent.ACTION_DOWN;
+                    mDownX = event.getX();//float DownX
+                    mDownY = event.getY();//float DownY
+                    moveX = 0;
+                    moveY = 0;
+                    //long currentMS     获取系统时间
+                    currentMS = System.currentTimeMillis();
+                    break;
+                case MotionEvent.ACTION_MOVE:
+                    action = ACTION_MOVE;
+                    moveX += Math.abs(event.getX() - mDownX);//X轴距离
+                    moveY += Math.abs(event.getY() - mDownY);//y轴距离
+                    mDownX = event.getX();
+                    mDownY = event.getY();
+                    break;
+                //移动时间
+                case MotionEvent.ACTION_UP:
+                    long moveTime = System.currentTimeMillis() - currentMS;
+                    //判断是否继续传递信号
+                    if (moveTime > 200 && (moveX > 20 || moveY > 20)) {
+                        //不再执行后面的事件，在这句前可写要执行的触摸相关代码。点击事件是发生在触摸弹起后
+                        action = ACTION_MOVE;
+                    } else if (moveTime > 1000 && (moveX < 20 || moveY < 20)) {
+                        action = ACTION_LONG_CLICK;
+                    }
+                    break;
+            }
+            return action;//继续执行后面的代码
+        }
+    }
+
 }
