@@ -9,11 +9,14 @@
       <module fileurl="file://$PROJECT_DIR$/server/server.iml" filepath="$PROJECT_DIR$/server/server.iml" />
       <module fileurl="file://$PROJECT_DIR$/xAlbum/xAlbum.iml" filepath="$PROJECT_DIR$/xAlbum/xAlbum.iml" />
       <module fileurl="file://$PROJECT_DIR$/xImage/xImage.iml" filepath="$PROJECT_DIR$/xImage/xImage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xMedia/xMedia.iml" filepath="$PROJECT_DIR$/xMedia/xMedia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xOpus/xOpus.iml" filepath="$PROJECT_DIR$/xOpus/xOpus.iml" />
       <module fileurl="file://$PROJECT_DIR$/xPhotoViewAttacher/xPhotoViewAttacher.iml" filepath="$PROJECT_DIR$/xPhotoViewAttacher/xPhotoViewAttacher.iml" />
       <module fileurl="file://$PROJECT_DIR$/xRecyclerView/xRecyclerView.iml" filepath="$PROJECT_DIR$/xRecyclerView/xRecyclerView.iml" />
       <module fileurl="file://$PROJECT_DIR$/xSQLite/xSQLite.iml" filepath="$PROJECT_DIR$/xSQLite/xSQLite.iml" />
       <module fileurl="file://$PROJECT_DIR$/xScheduleView/xScheduleView.iml" filepath="$PROJECT_DIR$/xScheduleView/xScheduleView.iml" />
       <module fileurl="file://$PROJECT_DIR$/xSwipeItemlayout/xSwipeItemlayout.iml" filepath="$PROJECT_DIR$/xSwipeItemlayout/xSwipeItemlayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xTextView/xTextView.iml" filepath="$PROJECT_DIR$/xTextView/xTextView.iml" />
       <module fileurl="file://$PROJECT_DIR$/xUtils/xUtils.iml" filepath="$PROJECT_DIR$/xUtils/xUtils.iml" />
       <module fileurl="file://$PROJECT_DIR$/xViewPager/xViewPager.iml" filepath="$PROJECT_DIR$/xViewPager/xViewPager.iml" />
     </modules>

@@ -5,7 +5,10 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <!-- 访问权限 -->
     <uses-permission android:name="cyb.xandroid.server.BIND_AIDL_SERVER" />
 
@@ -227,6 +230,42 @@
         <activity
             android:name=".view.xscheduleviw.XScheduleViewAcitivty"
             android:label="xScheduleView/XScheduleView"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="cyb.xandroid.demo.Sample" />
+            </intent-filter>
+        </activity>
+        <!--  -->
+        <!--  -->
+        <!-- xTextView start -->
+        <activity
+            android:name=".view.xtextview.XTextViewAcitivty"
+            android:label="xTextView/XtextView"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="cyb.xandroid.demo.Sample" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.xtextview.XTextViewSceActivity"
+            android:label="xTextView/XtextView"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!--  -->
+        <!--  -->
+        <!-- Util start -->
+        <activity
+            android:name=".utitls.UtilActivity"
+            android:label="@string/title_activity_util"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".utitls.SystemUtilActivity"
+            android:label="xUtil/SystemUtil"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />

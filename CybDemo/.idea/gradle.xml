@@ -14,11 +14,14 @@
             <option value="$PROJECT_DIR$/server" />
             <option value="$PROJECT_DIR$/xAlbum" />
             <option value="$PROJECT_DIR$/xImage" />
+            <option value="$PROJECT_DIR$/xMedia" />
+            <option value="$PROJECT_DIR$/xOpus" />
             <option value="$PROJECT_DIR$/xPhotoViewAttacher" />
             <option value="$PROJECT_DIR$/xRecyclerView" />
             <option value="$PROJECT_DIR$/xSQLite" />
             <option value="$PROJECT_DIR$/xScheduleView" />
             <option value="$PROJECT_DIR$/xSwipeItemlayout" />
+            <option value="$PROJECT_DIR$/xTextView" />
             <option value="$PROJECT_DIR$/xUtils" />
             <option value="$PROJECT_DIR$/xViewPager" />
           </set>

@@ -4,11 +4,10 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import cyb.xandroid.bind.XViewUtil;
+import cyb.xandroid.bind.XBindView;
 
 /**
  * Created by asus on 2018/3/22.
@@ -24,19 +23,19 @@ public class BaseActivity extends Activity {
     @Override
     public void setContentView(@LayoutRes int layoutResID) {
         super.setContentView(layoutResID);
-        XViewUtil.bind(this);
+        XBindView.bind(this);
     }
 
     @Override
     public void setContentView(View view, ViewGroup.LayoutParams params) {
         super.setContentView(view, params);
-        XViewUtil.bind(this);
+        XBindView.bind(this);
     }
 
     @Override
     public void setContentView(View view) {
         super.setContentView(view);
-        XViewUtil.bind(this);
+        XBindView.bind(this);
     }
 
 

@@ -13,10 +13,12 @@ import cyb.xandroid.demo.base.BaseFragmentPagerAdapter;
 import cyb.xandroid.demo.acitity.ActivityFragment;
 import cyb.xandroid.demo.service.ServiceFragment;
 import cyb.xandroid.demo.statusbar.StatusBarFragment;
+import cyb.xandroid.demo.utitls.UtilFragment;
 import cyb.xandroid.demo.view.xiamgeview.XImageViewFragment;
 import cyb.xandroid.demo.view.xrecyclerview.XRecyclerViewFragment;
 import cyb.xandroid.demo.view.xscheduleviw.XScheduleViewFragment;
 import cyb.xandroid.demo.view.xtablayout.TabLayoutFragment;
+import cyb.xandroid.demo.view.xtextview.XTextViewFragment;
 import cyb.xandroid.demo.view.xviewpager.XViewPagerFragment;
 
 public class MainActivity extends BaseAppCompatActivity {
@@ -45,7 +47,6 @@ public class MainActivity extends BaseAppCompatActivity {
         mFragmentPagerAdapter = new TabLayoutPagerAdapter(getSupportFragmentManager());
         mFragmentPagerAdapter.setViewPagerList(mViewPagerList);
 
-
         mViewPager = (ViewPager) findViewById(R.id.viewpager);
         mViewPager.setAdapter(mFragmentPagerAdapter);
 
@@ -57,6 +58,7 @@ public class MainActivity extends BaseAppCompatActivity {
 
     private void initFragment() {
         mViewPagerList = new ArrayList<>();
+        mViewPagerList.add(new IViewPager("Util", UtilFragment.newInstance()));
         mViewPagerList.add(new IViewPager("Activity", ActivityFragment.newInstance()));
         mViewPagerList.add(new IViewPager("Service", ServiceFragment.newInstance("xService", false)));
         mViewPagerList.add(new IViewPager("StatusBar", StatusBarFragment.newInstance()));
@@ -67,7 +69,7 @@ public class MainActivity extends BaseAppCompatActivity {
         mViewPagerList.add(new IViewPager("xViewPager", XViewPagerFragment.newInstance("xViewPager", false)));
         mViewPagerList.add(new IViewPager("xSwipeItemLayout", XViewPagerFragment.newInstance("xSwipeItemLayout", false)));
         mViewPagerList.add(new IViewPager("xScheduleView", XScheduleViewFragment.newInstance("xScheduleView", false)));
-        mViewPagerList.add(new IViewPager("TabLayout", TabLayoutFragment.newInstance()));
+        mViewPagerList.add(new IViewPager("xTextView", XTextViewFragment.newInstance("xTextView", false)));
     }
 
 }

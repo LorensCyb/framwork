@@ -3,8 +3,6 @@ package cyb.xandroid.bind;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.Dialog;
-import android.app.Fragment;
-import android.content.Context;
 import android.os.Build;
 import android.support.annotation.CheckResult;
 import android.support.annotation.IdRes;
@@ -23,11 +21,11 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-public class XViewUtil {
+public class XBindView {
     private static final String TAG = "ButterKnife";
     private static boolean debug = false;
 
-    private XViewUtil() {
+    private XBindView() {
         throw new AssertionError("No instances.");
     }
 
@@ -60,7 +58,7 @@ public class XViewUtil {
      * Control whether debug logging is enabled.
      */
     public static void setDebug(boolean debug) {
-        XViewUtil.debug = debug;
+        XBindView.debug = debug;
     }
 
     /**

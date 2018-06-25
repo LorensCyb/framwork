@@ -1,0 +1,29 @@
+<resources>
+
+    <style name="Item">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Item.Layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Item.Label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Item.Edit">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">120dip</item>
+        <item name="android:layout_marginRight">20dip</item>
+    </style>
+
+</resources>

@@ -36,8 +36,7 @@ public class BaseActivityListFragment extends ListFragment {
      *
      * @param label Fragement 的标题
      * @param force
-     *
-     * */
+     */
     public static BaseActivityListFragment newInstance(String label, boolean force) {
         BaseActivityListFragment fragment = new BaseActivityListFragment();
         Bundle args = new Bundle();

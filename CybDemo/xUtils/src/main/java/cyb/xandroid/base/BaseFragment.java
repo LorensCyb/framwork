@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import cyb.xandroid.bind.XViewUtil;
+import cyb.xandroid.bind.XBindView;
 
 /**
  * Created by asus on 2018/3/27.
@@ -19,7 +19,7 @@ public class BaseFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = super.onCreateView(inflater, container, savedInstanceState);
-        XViewUtil.bind(view);
+        XBindView.bind(view);
         return view;
     }
 }
