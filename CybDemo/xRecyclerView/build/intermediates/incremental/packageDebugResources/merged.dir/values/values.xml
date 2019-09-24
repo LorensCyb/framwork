@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="AVLoadingIndicatorView"><attr name="indicator">
+    <dimen name="textandiconmargin">10dp</dimen>
+    <string name="app_name">XRecyclerView</string>
+    <string name="listview_header_hint_normal">下拉刷新</string>
+    <string name="listview_header_hint_release">松开刷新</string>
+    <string name="listview_header_last_time">last update：</string>
+    <string name="listview_loading">正在加载...</string>
+    <string name="nomore_loading">""</string>
+    <string name="refresh_done">刷新完成</string>
+    <string name="refreshing">正在刷新...</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <declare-styleable name="AVLoadingIndicatorView">
+        <attr name="indicator">
             <flag name="BallPulse" value="0"/>
             <flag name="BallGridPulse" value="1"/>
             <flag name="BallClipRotate" value="2"/>
@@ -29,24 +49,7 @@
             <flag name="Pacman" value="25"/>
             <flag name="BallGridBeat" value="26"/>
             <flag name="SemiCircleSpin" value="27"/>
-        </attr><attr format="color" name="indicator_color"/></declare-styleable>
-    <dimen name="textandiconmargin">10dp</dimen>
-    <string name="app_name">XRecyclerView</string>
-    <string name="listview_header_hint_normal">下拉刷新</string>
-    <string name="listview_header_hint_release">松开刷新</string>
-    <string name="listview_header_last_time">last update：</string>
-    <string name="listview_loading">正在加载...</string>
-    <string name="nomore_loading">""</string>
-    <string name="refresh_done">刷新完成</string>
-    <string name="refreshing">正在刷新...</string>
-    <style name="AppBaseTheme" parent="android:Theme.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
-    </style>
-    <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
-    </style>
+        </attr>
+        <attr format="color" name="indicator_color"/>
+    </declare-styleable>
 </resources>

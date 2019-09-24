@@ -1,12 +1,12 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 26
+        minSdkVersion rootProject.ext.minSdkVersionCode
+        targetSdkVersion rootProject.ext.targetSdkVersionCode
         versionCode 1
         versionName "1.0"
 
@@ -21,13 +21,13 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:26.+'
-    testCompile 'junit:junit:4.12'
-    provided 'com.android.support:appcompat-v7:22.2.1'
-    provided 'com.android.support:recyclerview-v7:22.2.1'
-    provided 'com.github.bumptech.glide:glide:3.6.1'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:22.2.1'
+    implementation 'com.github.bumptech.glide:glide:3.6.1'
 }

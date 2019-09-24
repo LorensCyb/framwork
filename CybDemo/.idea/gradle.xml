@@ -3,30 +3,13 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT" />
+        </compositeConfiguration>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/FaceDetect" />
-            <option value="$PROJECT_DIR$/aidl" />
-            <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/server" />
-            <option value="$PROJECT_DIR$/xAlbum" />
-            <option value="$PROJECT_DIR$/xImage" />
-            <option value="$PROJECT_DIR$/xMedia" />
-            <option value="$PROJECT_DIR$/xOpus" />
-            <option value="$PROJECT_DIR$/xPhotoViewAttacher" />
-            <option value="$PROJECT_DIR$/xRecyclerView" />
-            <option value="$PROJECT_DIR$/xSQLite" />
-            <option value="$PROJECT_DIR$/xScheduleView" />
-            <option value="$PROJECT_DIR$/xSwipeItemlayout" />
-            <option value="$PROJECT_DIR$/xTextView" />
-            <option value="$PROJECT_DIR$/xUtils" />
-            <option value="$PROJECT_DIR$/xViewPager" />
-          </set>
-        </option>
         <option name="resolveModulePerSourceSet" value="false" />
+        <option name="testRunner" value="PLATFORM" />
       </GradleProjectSettings>
     </option>
   </component>
