@@ -18,6 +18,6 @@ android {
 }
 
 dependencies {
-    provided files('libs/android-support-v7-recyclerview.jar')
-    provided files('libs/android-support-v4.jar')
+    compileOnly files('libs/android-support-v7-recyclerview.jar')
+    compileOnly files('libs/android-support-v4.jar')
 }
