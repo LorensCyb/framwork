@@ -8,9 +8,10 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-    <!-- 访问权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 访问权限 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!--  -->
     <uses-permission android:name="cyb.xandroid.server.BIND_AIDL_SERVER" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -18,15 +19,18 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".acitity.SingleTopActivity"
+            android:label="@string/title_activity_single_top"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!--  -->
+        </activity> <!--  -->
         <!-- Activity star -->
         <activity
             android:name=".acitity.IntenFilterActivity"
@@ -38,23 +42,18 @@
 
                 <category android:name="cyb.xandroid.demo.Sample" />
             </intent-filter>
-        </activity>
-        <!-- <activity -->
+        </activity> <!-- <activity -->
         <!-- android:name=".acitity.Te" -->
         <!-- android:label="TestIntenFilterActivity" -->
         <!-- android:theme="@style/AppTheme.NoActionBar"> -->
         <!-- <intent-filter> -->
         <!-- <action android:name="cyb.xandroid.demo.Action_TestIntenFilter" /> -->
         <!-- <action android:name="cyb.xandroid.demo.Action_TestIntenFilter2" /> -->
-
-
         <!-- &lt;!&ndash; 隐身启动必须有 &ndash;&gt; -->
         <!-- <category android:name="android.intent.category.DEFAULT" /> -->
         <!-- </intent-filter> -->
         <!-- <intent-filter> -->
         <!-- <action android:name="android.intent.action.VIEW" /> -->
-
-
         <!-- <category android:name="cyb.xandroid.demo.Category_TestIntenFilter" /> -->
         <!-- <category android:name="cyb.xandroid.demo.Category_TestIntenFilter2" /> -->
         <!-- <category android:name="android.intent.category.DEFAULT" /> -->
@@ -63,35 +62,25 @@
         <!-- <action android:name="android.intent.action.VIEW" /> -->
         <!-- &lt;!&ndash; 隐身启动必须有 &ndash;&gt; -->
         <!-- <category android:name="android.intent.category.DEFAULT" /> -->
-
-
         <!-- <data android:mimeType="test/IntenFilter" /> -->
         <!-- </intent-filter> -->
         <!-- <intent-filter> -->
         <!-- <action android:name="cyb.xandroid.demo.Action_TestIntenFilter" /> -->
         <!-- &lt;!&ndash; 隐身启动必须有 &ndash;&gt; -->
         <!-- <category android:name="android.intent.category.DEFAULT" /> -->
-
-
         <!-- <data -->
         <!-- android:host="www.baidu.com" -->
         <!-- android:scheme="http" /> -->
         <!-- </intent-filter> -->
         <!-- <intent-filter> -->
-
-
         <!-- &lt;!&ndash; 隐身启动必须有 &ndash;&gt; -->
         <!-- <category android:name="android.intent.category.DEFAULT" /> -->
-
-
         <!-- <data -->
         <!-- android:host="www.sina.com.cn" -->
         <!-- android:mimeType="test/IntenFilter2" -->
         <!-- android:scheme="http" /> -->
         <!-- </intent-filter> -->
         <!-- </activity> -->
-
-
         <!-- activity end -->
         <!--  -->
         <!--  -->
@@ -104,8 +93,7 @@
 
                 <category android:name="cyb.xandroid.demo.Sample" />
             </intent-filter>
-        </activity>
-        <!-- TabLayout end -->
+        </activity> <!-- TabLayout end -->
         <!--  -->
         <!--  -->
         <!-- StatusBar start -->
@@ -118,8 +106,7 @@
 
                 <category android:name="cyb.xandroid.demo.Sample" />
             </intent-filter>
-        </activity>
-        <!-- StatusBar end -->
+        </activity> <!-- StatusBar end -->
         <!--  -->
         <!--  -->
         <!-- XViewPager start -->
@@ -142,8 +129,7 @@
 
                 <category android:name="cyb.xandroid.demo.Sample" />
             </intent-filter>
-        </activity>
-        <!-- XViewPager end -->
+        </activity> <!-- XViewPager end -->
         <!--  -->
         <!--  -->
         <!-- XImage start -->
@@ -196,10 +182,19 @@
 
                 <category android:name="cyb.xandroid.demo.Sample" />
             </intent-filter>
+        </activity> <!-- XImage end -->
+        <!--  -->
+        <!--  -->
+        <activity
+            android:name=".service.BindServiceActivity"
+            android:label="xService/BindService"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="cyb.xandroid.demo.Sample" />
+            </intent-filter>
         </activity>
-        <!-- XImage end -->
-        <!--  -->
-        <!--  -->
         <activity
             android:name=".service.AidlServiceActivity"
             android:label="xService/AidlService"
@@ -210,7 +205,23 @@
                 <category android:name="cyb.xandroid.demo.Sample" />
             </intent-filter>
         </activity>
-        <!-- end -->
+        <activity
+            android:name=".service.ForeGroupServiceActivity"
+            android:label="xService/ForegroundService"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="cyb.xandroid.demo.Sample" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".service.MessengerService"
+            android:exported="false" />
+        <service
+            android:name=".service.ForegroundService"
+            android:exported="false" /> <!-- end -->
         <!--  -->
         <!--  -->
         <!-- xRecyclerView start -->
@@ -223,8 +234,19 @@
 
                 <category android:name="cyb.xandroid.demo.Sample" />
             </intent-filter>
-        </activity>
+        </activity> <!--  -->
         <!--  -->
+        <!-- xListView start -->
+        <activity
+            android:name=".view.xlistview.XListViewActivity"
+            android:label="xListView/XListView"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="cyb.xandroid.demo.Sample" />
+            </intent-filter>
+        </activity> <!--  -->
         <!--  -->
         <!-- xScheduleView start -->
         <activity
@@ -236,8 +258,7 @@
 
                 <category android:name="cyb.xandroid.demo.Sample" />
             </intent-filter>
-        </activity>
-        <!--  -->
+        </activity> <!--  -->
         <!--  -->
         <!-- xTextView start -->
         <activity
@@ -253,19 +274,39 @@
         <activity
             android:name=".view.xtextview.XTextViewSceActivity"
             android:label="xTextView/XtextView"
-            android:theme="@style/AppTheme.NoActionBar" />
-
-        <!--  -->
+            android:theme="@style/AppTheme.NoActionBar" /> <!--  -->
         <!--  -->
         <!-- Util start -->
         <activity
             android:name=".utitls.UtilActivity"
             android:label="@string/title_activity_util"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".utitls.SystemUtilActivity"
             android:label="xUtil/SystemUtil"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="cyb.xandroid.demo.Sample" />
+            </intent-filter>
+        </activity>
+
+        <!-- Handle start -->
+        <activity
+            android:name=".handle.OtherHandleActivity"
+            android:label="xHandle/OtherHandle"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="cyb.xandroid.demo.Sample" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".permission.XPermissionActivity"
+            android:label="xPermission/xPermission"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />

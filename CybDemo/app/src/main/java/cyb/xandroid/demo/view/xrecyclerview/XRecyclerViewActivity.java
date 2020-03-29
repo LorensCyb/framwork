@@ -4,6 +4,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
+import android.widget.ListView;
 
 import cyb.xandroid.demo.R;
 import cyb.xandroid.view.xrecyclerview.ProgressStyle;

@@ -9,7 +9,7 @@
 
         <!--<item name="android:actionBarSize">40dp</item>-->
         <!--下段代码就是去除阴影的-->
-        <item name="android:windowContentOverlay">@null</item>
+        <!--        <item name="android:windowContentOverlay">@null</item>-->
         <item name="android:screenOrientation">portrait</item>
         <item name="textAllCaps">false</item>
     </style>

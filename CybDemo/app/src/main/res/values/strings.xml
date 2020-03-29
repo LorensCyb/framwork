@@ -27,5 +27,7 @@
     <string name="title_activity_aidl_service">AidlServiceActivity</string>
     <string name="title_activity_util">UtilActivity</string>
     <string name="title_activity_system_util">SystemUtilActivity</string>
+    <string name="title_activity_single_top">SingleTopActivity</string>
+    <string name="title_activity_xpermission">XPermissionActivity</string>
     <!--xAlbum end-->
 </resources>

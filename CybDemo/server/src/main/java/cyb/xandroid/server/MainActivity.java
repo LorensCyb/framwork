@@ -1,5 +1,6 @@
 package cyb.xandroid.server;
 
+import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }
     };
+
 
     private ServiceConnection mServiceConnection = new ServiceConnection() {
         @Override

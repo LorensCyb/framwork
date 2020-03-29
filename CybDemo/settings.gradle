@@ -1,1 +1,1 @@
-include ':app', ':xImage', ':xViewPager', ':xUtils', ':xAlbum', ':server', ':aidl', ':FaceDetect', ':xPhotoViewAttacher', ':xSwipeItemlayout', ':xRecyclerView', ':xScheduleView', ':xSQLite', ':xMedia', ':xOpus', ':xTextView'//, ':xAlbum'
+include ':app', ':xImage', ':xViewPager', ':xUtils', ':xAlbum', ':server', ':aidl', ':FaceDetect', ':xPhotoViewAttacher', ':xSwipeItemlayout', ':xRecyclerView', ':xScheduleView', ':xSQLite', ':xMedia', ':xOpus', ':xTextView', ':JavaTest', ':xOkHttp'//, ':xAlbum'

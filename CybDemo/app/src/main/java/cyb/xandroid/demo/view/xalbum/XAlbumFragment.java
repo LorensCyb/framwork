@@ -15,4 +15,6 @@ import cyb.xandroid.demo.base.BaseActivityListFragment;
 public class XAlbumFragment extends BaseActivityListFragment {
 
 
+
+
 }

@@ -132,7 +132,14 @@ public class CircleImageView extends ImageView {
     }
 
     @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+    }
+
+    @Override
     protected void onDraw(Canvas canvas) {
+
+
         if (mDisableCircularTransformation) {
             super.onDraw(canvas);
             return;

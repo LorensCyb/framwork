@@ -19,4 +19,8 @@ public class ActivityFragment extends BaseActivityListFragment {
         return fragment;
     }
 
+    public void teste(){
+
+    }
+
 }

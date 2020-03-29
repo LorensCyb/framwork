@@ -4,12 +4,14 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CybDemo.iml" filepath="$PROJECT_DIR$/CybDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/FaceDetect/FaceDetect.iml" filepath="$PROJECT_DIR$/FaceDetect/FaceDetect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaTest/JavaTest.iml" filepath="$PROJECT_DIR$/JavaTest/JavaTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/aidl/aidl.iml" filepath="$PROJECT_DIR$/aidl/aidl.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/server/server.iml" filepath="$PROJECT_DIR$/server/server.iml" />
       <module fileurl="file://$PROJECT_DIR$/xAlbum/xAlbum.iml" filepath="$PROJECT_DIR$/xAlbum/xAlbum.iml" />
       <module fileurl="file://$PROJECT_DIR$/xImage/xImage.iml" filepath="$PROJECT_DIR$/xImage/xImage.iml" />
       <module fileurl="file://$PROJECT_DIR$/xMedia/xMedia.iml" filepath="$PROJECT_DIR$/xMedia/xMedia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xOkHttp/xOkHttp.iml" filepath="$PROJECT_DIR$/xOkHttp/xOkHttp.iml" />
       <module fileurl="file://$PROJECT_DIR$/xOpus/xOpus.iml" filepath="$PROJECT_DIR$/xOpus/xOpus.iml" />
       <module fileurl="file://$PROJECT_DIR$/xPhotoViewAttacher/xPhotoViewAttacher.iml" filepath="$PROJECT_DIR$/xPhotoViewAttacher/xPhotoViewAttacher.iml" />
       <module fileurl="file://$PROJECT_DIR$/xRecyclerView/xRecyclerView.iml" filepath="$PROJECT_DIR$/xRecyclerView/xRecyclerView.iml" />

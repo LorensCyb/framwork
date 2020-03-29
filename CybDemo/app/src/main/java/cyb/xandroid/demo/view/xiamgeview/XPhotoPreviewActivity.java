@@ -26,7 +26,7 @@ public class XPhotoPreviewActivity extends AppCompatActivity implements View.OnC
         setContentView(R.layout.activity_xphoto_preview);
 
         Uri uri = Uri.parse("http://img2.imgtn.bdimg.com/it/u=49292017,22064401&fm=26&gp=0.jpg");
-        Picasso.with(this)
+        Picasso.get()
                 .load(uri)
                 .into((ImageView) findViewById(R.id.imageview2));
     }

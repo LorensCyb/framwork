@@ -2,7 +2,11 @@ package cyb.xandroid.demo;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import java.util.Vector;
+import java.util.WeakHashMap;
+import java.util.concurrent.ConcurrentSkipListMap;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * Example local unit test, which will execute on the development machine (host).
@@ -13,5 +17,7 @@ public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() throws Exception {
         assertEquals(4, 2 + 2);
+
     }
+
 }

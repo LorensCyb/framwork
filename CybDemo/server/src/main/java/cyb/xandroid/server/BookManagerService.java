@@ -40,6 +40,11 @@ public class BookManagerService extends Service {
 
         @Override
         public List<Book> getBookList() throws RemoteException {
+            try {
+                Thread.sleep(30*1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             return mBookList;
         }
 
